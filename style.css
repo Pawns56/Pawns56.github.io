@@ -23,12 +23,12 @@ h2 {
 }
 a {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 /* ******************NAVBAR***************************** */
 nav {
     overflow: hidden;
-    background-color: rgb(245, 219, 181);
+    background-color: rgba(11, 5, 68, 0.425);
     position: fixed;
     width: 100%;
     opacity: 0.9;
@@ -44,14 +44,13 @@ header li a {
     padding: 18px 16px;
 }
 #logo {
-    font-family: 'Dancing Script'; 
     font-weight: bold;
     float: left;
 }
 /* ********************IMAGE PRINCIPALE******************************* */
 #imagePrincipale{
     padding-top: 60px;
-    background: url(media/banniere.png) no-repeat fixed 50% 50%;
+    background: url(media/nouvelle\ banniere.jpg) no-repeat fixed 50% 50%;
     background-size: cover;
     height: 799px;
 }
@@ -78,7 +77,7 @@ h3{
 }
 /* ********************* PRESENTATION******************** */
 #presentation{
-    background-color: rgb(245, 219, 181);
+    background-color: #3b50c7ad;
     padding: 10px 0px 100px 0;
 }
 #TexteIntro{
@@ -117,6 +116,7 @@ h3{
 }
 #fun {
     background: url(media/lol.jpg);
+
 }
 #lan {
     background: url(media/lan2.jpg);
@@ -155,7 +155,7 @@ h3{
 }
 /* *********************FOOTER********************* */
 footer {
-    background-color: #524a3a;
+    background-color: #C76E50;
     color: blanchedalmond;
     padding: 20px 0 10px 0;
     text-align: center;
