@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Orbitron&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Orbitron' , sans-serif;
+    padding: 0;
+    margin: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 30px;
+    font-size:  2em;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+/* ******************NAVBAR***************************** */
+nav {
+    overflow: hidden;
+    background-color: rgb(245, 219, 181);
+    position: fixed;
+    width: 100%;
+    opacity: 0.9;
+}
+header li {
+    float: right;
+    font-size: 1.2em;
+}
+header li a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 18px 16px;
+}
+#logo {
+    font-family: 'Dancing Script'; 
+    font-weight: bold;
+    float: left;
+}
+/* ********************IMAGE PRINCIPALE******************************* */
+#imagePrincipale{
+    padding-top: 60px;
+    background: url(media/banniere.png) no-repeat fixed 50% 50%;
+    background-size: cover;
+    height: 799px;
+}
+h1{
+    font-family: 'Dancing Script', cursive;
+    text-align:  center;
+    color: rgb(241, 19, 11);
+    font-size: 6em;
+    margin-top: 80px;
+    text-shadow: 1px 3px 2px white;
+}
+#PremierTrait{
+    height: 1px;
+    width: 25%;
+    margin: -3px auto;
+    background-color: rgb(235, 8, 8);
+    box-shadow: 1px 3px 2px white;
+}
+h3{
+    text-align: center;
+    color: rgb(241, 13, 13);
+    font-size: 3em;
+    text-shadow: 1px 3px 2px white;
+}
+/* ********************* PRESENTATION******************** */
+#presentation{
+    background-color: rgb(245, 219, 181);
+    padding: 10px 0px 100px 0;
+}
+#TexteIntro{
+    padding: 0px 20%;
+}
+#Prestation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 10%;
+}
+.imagesPrestations{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-size: 1.8em;
+    margin: 15px;
+    font-weight: 300;
+}
+.imagesPrestations img{
+    border-radius: 10px;
+    box-shadow: 5px 5px 13px 5px #000000;
+}
+.imagesPrestations img:hover{
+    opacity: 0.5;
+    transform: scale(1.05);
+    transition: 0.6s ease-in-out;
+}
+/* ******************** ASSO *********************** */
+#asso {
+    height: 1400px;
+    background-color: rgb(250, 234, 209);
+    padding: 1px  2%;
+}
+#asso h2 {
+    padding-top: 60px;
+}
+#fun {
+    background: url(media/lol2.jpg);
+}
+#lan {
+    background: url(media/lan2.jpg);
+}
+#discuter {
+    background: url(media/blabla2.jpg);
+}
+#asso li {
+    margin: 65px 100px 0 100px;
+    height: 300px;
+    width: 55%;
+    max-width: 550px;
+    float: left;
+    box-shadow: 6px 6px 28px -1px black;
+}
+#asso p {
+    height: 60px;
+    width: 235px;
+    background-color: rgb(50, 201, 63);
+    float: right;
+    margin: 50px -180px 0 0;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 15px;
+    box-shadow: 4px 4px 0 1px rgb(0, 0, 0);
+}
+#asso #lan {
+    float: right;
+}
+#lan p {
+    float: left;
+    background-color: cyan;
+    margin-left: -180px;
+    box-shadow:  -4px 4px 0 1px black;
+}
+/* *********************FOOTER********************* */
+footer {
+    background-color: #524a3a;
+    color: blanchedalmond;
+    padding: 20px 0 10px 0;
+    text-align: center;
+}
+form {
+    margin: 0 auto;
+    max-width: 900px;
+}
+input, textarea, button {
+    border: none;
+    width: 55%;
+    padding: 15px 10px;
+    margin: 1px 0;
+    font-size: 1.2em;
+    font-family: 'advent Pro' , sans-serif;
+    border-radius: 8px;
+}
+textarea {
+    height: 120px;
+}
+button {
+    font-size: 1.5em;
+    background-color: blanchedalmond;
+}
+button:hover {
+    background-color: brown;
+    color: cornsilk;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+#deuxiemetrait {
+    height: 1px;
+    width:  75%;
+    background-color: cornsilk;
+    margin: 60px auto;
+}
+#copyrightEtIcons {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 0 10%;
+}
+#copyright {
+    width: 50%;
+    text-align: left;
+    color: cornsilk;
+}
+#Icons {
+    text-align: right;
+}
+#Icons a {
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 1.3em;
+    color: cornsilk;
+}
+#Icons a:hover {
+    transform: scale(1.5);
+    transition: 0.1s;
+}
