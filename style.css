@@ -56,7 +56,7 @@ header li a {
     height: 799px;
 }
 h1{
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Orbitron', cursive;
     text-align:  center;
     color: rgb(241, 19, 11);
     font-size: 6em;
@@ -116,7 +116,7 @@ h3{
     padding-top: 60px;
 }
 #fun {
-    background: url(media/lol2.jpg);
+    background: url(media/lol.jpg);
 }
 #lan {
     background: url(media/lan2.jpg);
@@ -145,6 +145,7 @@ h3{
 }
 #asso #lan {
     float: right;
+
 }
 #lan p {
     float: left;
