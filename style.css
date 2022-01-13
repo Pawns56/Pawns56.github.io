@@ -20,6 +20,7 @@ h2 {
     text-align: center;
     padding-top: 30px;
     font-size:  2em;
+    margin-top: 0px;
 }
 a {
     text-decoration: none;
@@ -32,7 +33,9 @@ nav {
     position: fixed;
     width: 100%;
     opacity: 0.9;
+    z-index: 2;
 }
+
 header li {
     float: right;
     font-size: 1.2em;
@@ -154,15 +157,68 @@ h3{
     box-shadow:  -4px 4px 0 1px black;
 }
 /* *********************FOOTER********************* */
-footer {
-    background-color: #C76E50;
-    color: blanchedalmond;
-    padding: 20px 0 10px 0;
+
+#copyright {
+    position: fixed;
+    width: 50%;
+    text-align: left;
+    margin-top: -30px;
+    color: rgb(255, 255, 255);
+    z-index: 2;
+}
+/* **********************PLANNING************************ */
+.agenda {
+    border-collapse: collapse;
+    width: 90%;
+    margin: auto;
+}
+.agenda td,
+.agenda th {
+    border: 1px solid gray; 
+    padding: 7px;
+}
+.agenda th {
+    background: cyan;
+    color: rgb(0, 0, 0);
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+.agenda tr:nth-child(2n){
+    background-color: rgb(188, 188, 255);
+}
+.agenda tr{
     text-align: center;
 }
+.agenda tr :hover {
+    background: #ddd;
+}
+/* ******************************CONTACT******************************** */
+.grid-container{
+    display: grid;
+    grid-template-columns: 30% 20% 50%;
+    padding: 20px;
+}
+#contact {
+    text-transform: none;
+    color: rgb(250, 250, 250);
+}
+#clavier {
+    height: 100vh;
+    background-image: url(media/keybord.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    animation-name: back;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+}
 form {
-    margin: 0 auto;
-    max-width: 900px;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    border-radius: 20px;
+    text-align: center;
 }
 input, textarea, button {
     border: none;
@@ -186,32 +242,24 @@ button:hover {
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
-#deuxiemetrait {
-    height: 1px;
-    width:  75%;
-    background-color: cornsilk;
-    margin: 60px auto;
-}
-#copyrightEtIcons {
-    display: flex;
-    margin-bottom: 20px;
-    padding: 0 10%;
-}
-#copyright {
-    width: 50%;
-    text-align: left;
-    color: cornsilk;
-}
 #Icons {
-    text-align: right;
+    color: rgb(255, 0, 0);
 }
 #Icons a {
     display: inline-block;
     padding: 0 15px;
     font-size: 1.3em;
-    color: cornsilk;
+    color: rgb(255, 255, 255);
 }
 #Icons a:hover {
     transform: scale(1.5);
     transition: 0.1s;
+}
+@keyframes back{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
 }
